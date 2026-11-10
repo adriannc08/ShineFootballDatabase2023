@@ -1,0 +1,14 @@
+pyproject.toml
+app/__init__.py
+app/config.py
+app/main.py
+app/domain/__init__.py
+app/domain/season.py
+app/providers/__init__.py
+app/providers/api_football.py
+football_data_intelligence.egg-info/PKG-INFO
+football_data_intelligence.egg-info/SOURCES.txt
+football_data_intelligence.egg-info/dependency_links.txt
+football_data_intelligence.egg-info/requires.txt
+football_data_intelligence.egg-info/top_level.txt
+tests/test_season.py

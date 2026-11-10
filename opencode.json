@@ -1,0 +1,39 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "plan",
+  "instructions": [
+    "AGENTS.md",
+    "prompts/**/*.md"
+  ],
+  "model": "openrouter/REPLACE_WITH_AVAILABLE_MODEL",
+  "agent": {
+    "plan": {
+      "mode": "primary",
+      "prompt": "{file:./prompts/architect.md}",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    },
+    "build": {
+      "mode": "primary",
+      "prompt": "{file:./prompts/developer.md}"
+    },
+    "football-data": {
+      "mode": "subagent",
+      "prompt": "{file:./.opencode/agents/football-data.md}"
+    },
+    "database": {
+      "mode": "subagent",
+      "prompt": "{file:./.opencode/agents/database.md}"
+    },
+    "validator": {
+      "mode": "subagent",
+      "prompt": "{file:./.opencode/agents/validator.md}"
+    },
+    "gemini-auditor": {
+      "mode": "subagent",
+      "prompt": "{file:./.opencode/agents/gemini-auditor.md}"
+    }
+  }
+}
